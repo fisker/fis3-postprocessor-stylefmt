@@ -9,6 +9,7 @@ var path = require('path');
 var nodePath = 'node';
 var spawnSync = require('child_process').spawnSync;
 var stylefmtBin = path.normalize(path.join(__dirname, './bin/stylefmt.js'));
+var log = (global.fis && fis.log) || console;
 function nodeBin() {
   var args = [].slice.call(arguments).map(function(arg) {
     return typeof arg === 'string' ? arg : JSON.stringify(arg);
