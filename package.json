@@ -1,6 +1,6 @@
 {
   "name": "fis3-postprocessor-stylefmt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a css formatter of fis3 based on stylefmt",
   "main": "index.js",
   "repository": {
