@@ -1,6 +1,6 @@
 {
   "name": "fis3-postprocessor-stylefmt",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "a css formatter of fis3 based on stylefmt",
   "main": "index.js",
   "repository": {
@@ -18,6 +18,7 @@
   "author": "fisker Cheung <lionkay@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "es6-shim": "^0.35.1",
     "promise-synchronizer": "^0.0.4",
     "postcss": "^5.2.0",
     "stylefmt": "^4.3.1"
