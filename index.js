@@ -7,12 +7,9 @@
 
 // colors.js bug
 // es6-shim `bold` breaks colors.js
-var hasColors = false;
-if (String.prototype.__lookupGetter__('bold')) {
-  hasColors = true;
-}
+var getter = String.prototype.__lookupGetter__('bold');
 require('es6-shim');
-if (hasColors) {
+if (getter) {
   String.prototype.__defineGetter__('bold', function() {
     return '\x1B[1m' + this + '\x1B[22m';
   });
