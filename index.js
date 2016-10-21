@@ -11,7 +11,7 @@ var getter = String.prototype.__lookupGetter__('bold');
 require('es6-shim');
 if (getter) {
   String.prototype.__defineGetter__('bold', function() {
-    return '\x1B[1m' + this + '\x1B[22m';
+    return this;
   });
 }
 
