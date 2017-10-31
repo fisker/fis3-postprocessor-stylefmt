@@ -24,7 +24,7 @@ module.exports = function(content, file, conf) {
     content = syncPromise(
       stylefmt(content, {}).then(function(result) {
         if (result && result.css) {
-          content = result.css
+          return result.css
         }
       })
     )
