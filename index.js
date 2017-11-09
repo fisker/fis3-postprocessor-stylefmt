@@ -15,13 +15,13 @@ if (getter) {
   })
 }
 
-var syncPromise = require('promise-synchronizer')
+var sync = require('promise-synchronizer')
 var stylefmt = require('stylefmt').process
 var log = (global.fis && fis.log) || console
 
 module.exports = function(content, file, conf) {
   try {
-    content = syncPromise(
+    content = sync(
       stylefmt(content, {}).then(function(result) {
         if (result && result.css) {
           return result.css
