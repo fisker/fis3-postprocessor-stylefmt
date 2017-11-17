@@ -17,7 +17,7 @@ if (getter) {
 
 var sync = require('promise-synchronizer')
 var stylefmt = require('stylefmt').process
-var log = (global.fis && fis.log) || console
+var log = global.fis.log
 
 module.exports = function(content, file, conf) {
   try {
