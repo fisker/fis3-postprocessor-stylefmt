@@ -1,23 +1,3 @@
-# fis3-postprocessor-stylefmt
-a css formatter of fis3 based on stylefmt
+# [Deprecated] 
 
-[![npm](https://img.shields.io/npm/v/fis3-postprocessor-stylefmt.svg?style=flat-square)](https://www.npmjs.com/package/fis3-postprocessor-stylefmt) 
-[![npm](https://img.shields.io/npm/dt/fis3-postprocessor-stylefmt.svg?style=flat-square)](https://www.npmjs.com/package/fis3-postprocessor-stylefmt) 
-[![npm](https://img.shields.io/npm/dm/fis3-postprocessor-stylefmt.svg?style=flat-square)](https://www.npmjs.com/package/fis3-postprocessor-stylefmt)
-
-## usage
-
-    $ npm i -g fis3-postprocessor-stylefmt
-
-```
-// fis-conf.js
-
-fis.match('*.{css,scss,less,sss}}', {
-  postprocessor: fis.plugin('stylefmt')
-});
-```
-
-## links
-fis3: [http://fis.baidu.com/]
-
-stylefmt: [https://github.com/morishitter/stylefmt]
+see https://github.com/fisker/fis3-plugins
